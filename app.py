@@ -8,7 +8,8 @@ from gauss_solver import gauss_elimination, back_substitution, verify_solution
 st.set_page_config(page_title="Gaussian Elimination Solver", layout="centered")
 st.title(" Gaussian Elimination Solver")
 st.markdown("Enter the number of equations, then fill in the matrix values to solve the system.")
-
+st.markdown("---")
+st.markdown("👩‍💻 Developed by: **ANOOD MOHAMMAD AHMAD**")
 # Step 1: Choose number of equations
 n = st.number_input(" Number of equations:", min_value=2, max_value=10, step=1, value=3)
 
@@ -55,6 +56,4 @@ if "last_solution" in st.session_state:
             verify_solution(A, b, x)
         st.code(buffer.getvalue())
 
-st.markdown("---")
-st.markdown("👩‍💻 Developed by: **ANOOD MOHAMMAD AHMAD**")
 
