@@ -54,3 +54,7 @@ if "last_solution" in st.session_state:
         with contextlib.redirect_stdout(buffer):
             verify_solution(A, b, x)
         st.code(buffer.getvalue())
+
+st.markdown("---")
+st.markdown("👩‍💻 Developed by: **ANOOD MOHAMMAD AHMAD**")
+
